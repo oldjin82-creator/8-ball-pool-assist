@@ -25,7 +25,7 @@ jobs:
       - name: Install Android SDK
         run: sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
       - name: Build debug APK
-        run: gradle --no-daemon assembleDebug
+        run: gradle --no-daemon testDebugUnitTest assembleDebug
       - uses: actions/upload-artifact@v4
         with:
           name: PoolVisionPro-install-APK

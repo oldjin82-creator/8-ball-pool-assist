@@ -9,8 +9,8 @@ android {
         applicationId = "com.example.poolvisionpro"
         minSdk = 26
         targetSdk = 35
-        versionCode = 2
-        versionName = "0.4-experimental"
+        versionCode = 3
+        versionName = "0.5-fixes"
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
@@ -19,4 +19,4 @@ android {
     kotlinOptions { jvmTarget = "17" }
 }
 
-dependencies { implementation("org.opencv:opencv:4.10.0") }
+dependencies { testImplementation("junit:junit:4.13.2"); implementation("org.opencv:opencv:4.10.0") }
